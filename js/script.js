@@ -1,22 +1,26 @@
-function getApiData() {
-    const xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            const data = JSON.parse(xhr.responseText);
-            
-            const key=get_players.team_key; 
-            
-            console.log(key);
-            
-            
-           
-            
-           
-            
-            
-        }
-    }
-    xhr.open('GET', 'https://apiv2.apifootball.com/?action=get_players&player_name=ronaldo cristiano&APIkey=9fcbb3a5d4186964a9ed7ca00436dd5d8ad73b012662543323acee31e46b9f09');
-    xhr.send()
+function documentAdd(){
+
+    
+     var lastname=document.getElementById('lastname').value;
+    
+     var firstname=document.getElementById('firstname').value;
+     // Inserer id de firstname
+    
+
+    var url= "https://nba-players.herokuapp.com/players-stats/"+lastname+'/'+firstname;
+
+
+    fetch(url).then(function (resp) {return resp.json()}).then(function (data) {
+
+    console.log(data)
+
+    console.log('Assist par match '+ data.assists_per_game);
+    document.querySelector('div.Assist').innerHTML = 'Assist par match : '+ data.assists_per_game;
+    document.querySelector('div.NameTeam').innerHTML = "Nom d'équipe : " + data.team_name;
+    document.querySelector('div.PointsMatch').innerHTML = 'Points par match : '+ data.points_per_game;
+
+    })
 }
- getApiData()
+   
+
+      

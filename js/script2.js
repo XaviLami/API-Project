@@ -15,12 +15,12 @@ function documentAdd(){
    fetch(url).then(function (resp) {return resp.json()}).then(function (data) {
 
    console.log(data)
-   console.log(data.team_name)
-
+   console.log(data[0].team_name)
+   var resp =  data[0];
    
-   document.querySelector('div.Age').innerHTML = 'Age : '+ data.player_age;
-   document.querySelector('div.NameTeam').innerHTML = "Nom d'équipe : " + data.team_name;
-   document.querySelector('div.Number').innerHTML = 'Numéro : '+ data.player_number;
+   document.querySelector('div.Age').innerHTML = 'Age : '+ resp.player_age;
+   document.querySelector('div.NameTeam').innerHTML = "Nom d'équipe : " + resp.team_name;
+   document.querySelector('div.Number').innerHTML = 'Numéro : '+ resp.player_number;
 
    })
 }

@@ -1,15 +1,16 @@
-h1{
+h1 {
     text-align: center;
     padding: 15px;
+    color:rgb(255, 255, 255);
 }
 
 .span_Welcome{
     font-size: 20px;
-    color: blue;
-    
+    color: rgb(255, 255, 255);
+    margin-left: 33%;
 }
 .span_Name{
-    
+    color: rgb(255, 255, 255);
 }
 
 
@@ -20,3 +21,18 @@ h1{
     
 
 }
+
+body {
+    height: 100%;
+  }
+  .bg {
+    
+    background-image: url(../img/872479.jpg);
+  
+    
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

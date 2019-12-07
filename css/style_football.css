@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    padding: 15px;
+    color:rgb(255, 255, 255);
+}
+
+.span_Welcome{
+    font-size: 20px;
+    color:#2F4858;
+    margin-left: 33%;
+}
+.span_Name{
+    color:#2F4858;
+}
+
+
+.NomJoueur{
+    padding-top: 20px;
+    display: block;
+    justify-content: center;
+    
+
+}
+
+body {
+    height: 100%;
+  }
+  .bg {
+    background-image: url(../img/563319.jpg);
+  
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

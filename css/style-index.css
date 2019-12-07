@@ -1,0 +1,36 @@
+body {
+    height: 100%;
+  }
+  .bg {
+    
+    background-image: url(img/vestiaire.jpg);
+    
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  img {
+      size: 50%;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.span_Welcome{
+    font-size: 20px;
+    color: white;
+    margin-left: 29%;
+}
+
+div.bouton-aligne{
+	display:inline-block;
+	width:45%;
+    margin:10px 2.5% 10px 2.5%;
+    margin-left: 29%;
+	text-align:center;
+}
